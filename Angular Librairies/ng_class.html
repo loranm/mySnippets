@@ -1,0 +1,3 @@
+  <div class="form-group" ng-class="{'has-error': monFormulaire.mail.$invalid && !monFormulaire.mail.$pristine}, {'has-success': monFormulaire.mail.$valid && !monFormulaire.mail.$pristine}">
+   	 Adresse email :  <input type="text" name="mail" ng-model="monCtrl.utilisateur.email" ng-pattern="monCtrl.emailFormat" class="form-control">
+  </div>

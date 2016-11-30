@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='https://code.jquery.com/jquery-2.2.0.min.js')
+      
+  body
+    block content
+    h1 #{title}
+      - var test = []
+        ul
+          each n in test.length ? test : ['rien']
+            li= n
+    
+    //- p
+    //-   input#myButton(type='button', value='Cliquez ici')
+    //- 
+    script.
+      $(document).ready(function(){
+        $('#myButton').click(function(){
+          console.log('tu cliques');
+        });
+      });
