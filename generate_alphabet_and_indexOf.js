@@ -16,4 +16,4 @@ var amIInTheArray = function(value){
 console.log(range)
 
 
-console.log(amIInTheArray('d')); 
+console.log(amIInTheArray('C')); 
