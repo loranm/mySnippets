@@ -23,20 +23,21 @@
 		return a + b;
 	});
 
-	var complex = nums.map(function(a){
-		return a*3; //3,6,9,12
-	})
-	.filter(function(a){
-		return a % 2 === 0//6,12
-	})
-	.reduce (function(a,b){
-		return a * b//72
-	})
+	var complex = nums
+		.map(function(a){
+			return a*3; //3,6,9,12
+		})
+		.filter(function(a){
+			return a % 2 === 0//6,12
+		})
+		.reduce (function(a,b){
+			return a * b//72
+		})
 
 
-var withObj = arrOfObj.map(function(a,i){
-	return Object.keys(a)[0] + ' - ' + a.prenom
-})
+	var withObj = arrOfObj.map(function(a,i){
+		return Object.keys(a)[0] + ' - ' + a.prenom
+	})
 
 
 	console.log('myArr', newArr);
